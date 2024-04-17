@@ -1,6 +1,6 @@
 # Calendar Booking Console Application
 This application is designed so a user can manage appointments within a 2024 calendar.
-Each booking timeslot is only 30mins, and any booking desired to be longer than this will need to book 2 or more slots .
+Each booking timeslot is only 30mins, and any booking desired to be longer than this will need to book 2 or more slots.
 Booking constraints include:
 - A booking can only be made between 9am-5pm. This means the last booking of the day will end at 5:30pm.
 - A booking cannot be made between 4pm-5pm on the second day of the third week of any month.
@@ -19,7 +19,8 @@ There are two components to required to run this application.
 1. Run the `docker-compose.yml` file to create the mssql database. This is where all appointments will be stored.
 2. Run the `CalendarBooking` Console Application. Upon startup, this will create the database table and seed it with 
 bookings for 4-5pm on the second day of the third week in every month. This prevents subsequent bookings from being 
-made at this time.
+made at this time. As this needs to be run every time you want to complete a new command, the data will only be seeded 
+if the database is empty in order to not duplicate bookings.
 
 ## Future Improvements
 - At present the calendar only functions for the 2024 calendar year. In future this would be able to handle any year.
