@@ -34,4 +34,6 @@ would be to add exception handling around database calls and make them asynchron
 and speed. 
 - Being a console application, this application can only be consumed by a single user running it. Converting this to an 
 API would allow clients to add and manage their own bookings. Additionally, more cross-cutting concerns such as 
-logging would be implemented to remove the reliance on console logs. 
+logging would be implemented to remove the reliance on console logs.
+- Future roadmap improvements include creating integration tests, and using dependency injection on the CalendarContext 
+database so the Appointment Service can be tested.
