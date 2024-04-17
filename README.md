@@ -27,10 +27,10 @@ made at this time.
 the client and which booking belongs to the business. </br>
 For example: the bookings automatically created between 4-5pm on the second day of the third week of every month belong 
 to the business, but there is no way to identify that once they are added.
-- As this application is only run locally, the it will not start unless it can connect to the database. 
+- As this application is only run locally, and will not start unless it can connect to the database. 
 Were this to be deployed, there is a possibility the database operations may fail or block threads. An improvement here 
 would be to add exception handling around database calls and make them asynchronous. This will provide greater safety 
 and speed. 
 - Being a console application, this application can only be consumed by a single user running it. Converting this to an 
-API would allow clients to add and manage their own bookings. Along side this, more cross-cutting concerns such as 
-logging would be implemented as opposed to relying on console logs. 
+API would allow clients to add and manage their own bookings. Additionally, more cross-cutting concerns such as 
+logging would be implemented to remove the reliance on console logs. 
